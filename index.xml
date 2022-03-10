@@ -5,12 +5,37 @@
     <link>https://jonathan-valverde-l.github.io/</link>
       <atom:link href="https://jonathan-valverde-l.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Jonathan Valverde</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 10 Mar 2022 10:19:07 -0500</lastBuildDate>
     <image>
       <url>https://jonathan-valverde-l.github.io/media/icon_hu9e714fc6fa5672a662eff4605c7eb9cc_2075509_512x512_fill_lanczos_center_3.png</url>
       <title>Jonathan Valverde</title>
       <link>https://jonathan-valverde-l.github.io/</link>
     </image>
+    
+    <item>
+      <title>Multi-armed bandits for targeted advertising in social networks</title>
+      <link>https://jonathan-valverde-l.github.io/project/mabs-social-networks/</link>
+      <pubDate>Thu, 10 Mar 2022 10:19:07 -0500</pubDate>
+      <guid>https://jonathan-valverde-l.github.io/project/mabs-social-networks/</guid>
+      <description>&lt;p&gt;Project write-up available upon request.&lt;/p&gt;
+&lt;p&gt;This was a group project completed for the class &lt;a href=&#34;https://marketdesign.github.io/&#34; target=&#34;_blank&#34;&gt;Applied Mechanism Design for Social Good&lt;/a&gt; at UMD, and which served as my Master&amp;rsquo;s scholarly paper. We posed the problem of maximizing user engagement with advertisements in a social network, where highly influential users are prioritized. This framework was inspired by social networks in which a few users, often called influencers, are followed by a large number of users (for instance, in Twitter and Instagram). In our proposed setting, we must use observations from any related followers to better select ads for an influencer.&lt;/p&gt;
+&lt;p&gt;The motivation behind this problem setting is that choosing an advertisement to show to an influencer is a high risk/high reward choice. If the influencer engages with an ad and purchases a product, they may recommend the product to their followers, resulting in many purchases. However, bad ad choices could risk losing the engagement of the influencer, which is more costly than losing the engagement of a follower, since influencers are much rarer. On the other hand, the collective interests of the set of users that follow an influencer might reflect the interests of the influencer. Therefore, we can learn about the interests of an influencer by exploring those of their followers.&lt;/p&gt;
+&lt;p&gt;We modelled this problem as a multi-armed bandit (MAB) problem in a graph structure. We chose an advertisement to show for each user in a social network, and these choices correspond to the actions/arms in the MAB. We focused on the setting of a single influencer with several followers and imposed a reward structure between the ads so that the click-through rates (CTRs) of the followers reflected those of the influencer on average.&lt;/p&gt;
+&lt;p&gt;We designed an algorithm for this setting that reduced the need for exploration at the cost of using a biased estimator for the rewards of the influencer. We compared the regret achieved against those of two unbiased algorithms from the literature, and we found that our algorithm achieved much lower regret even after a high number of time steps. This might be because the unbiased algorithms did not make an efficient use of the reward structure of the problem, but in an infinite horizon, the biased algorithm might not converge towards the optimal arm. Future work could try to combine the best of both solutions by using the biased estimator as a warm start and subsequently relying on unbiased estimators.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Senior thesis: multi-armed bandits for robotic field estimation task</title>
+      <link>https://jonathan-valverde-l.github.io/project/senior-thesis/</link>
+      <pubDate>Thu, 10 Mar 2022 10:19:07 -0500</pubDate>
+      <guid>https://jonathan-valverde-l.github.io/project/senior-thesis/</guid>
+      <description>&lt;p&gt;Downloads: &lt;a href=&#34;https://jonathan-valverde-l.github.io/uploads/JonathanValverde_SeniorThesis.pdf&#34; target=&#34;_blank&#34;&gt;thesis&lt;/a&gt;, &lt;a href=&#34;https://jonathan-valverde-l.github.io/uploads/JonathanValverde_ThesisPoster.pdf&#34; target=&#34;_blank&#34;&gt;poster&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The problem of field estimation, or finding the spatial distribution of a resource in  space, has many applications in problems of robotic search. In my thesis, advised by &lt;a href=&#34;https://naomi.princeton.edu/&#34; target=&#34;_blank&#34;&gt;Prof. Naomi Leonard&lt;/a&gt;, I approached the problem in the framework of a Gaussian Multi-Armed Bandit (MAB) task, a problem in which an agent must learn about an unknown environment while maximizing expected reward. The arms correspond to discretized points in space, and the smoothness of the field is modeled as spatial correlation between the arms. To address this problem, I used the Upper Confidence Limit (UCL) algorithm, which was developed by Reverdy et al. in 2014 for Gaussian MAB problems with correlated arm rewards and prior knowledge.&lt;/p&gt;
+&lt;p&gt;The smoothness of the field is measured by a parameter known as the length scale. In real world applications, the agent can only have an estimate of this length scale. I explored the performance of UCL with correlation in comparison to other algorithms when the estimate of the length scale is correct. I then explored the effect of overestimates and underestimates in the length scale for fields of varying smoothness. Finally, I implemented the search task in a testbed with a robot, giving additional metrics of performance.&lt;/p&gt;
+&lt;p&gt;The simulations showed that knowledge of the spatial correlation of the arms can result in improvements in performance using UCL when compared to other algorithms that do not account for correlation. In addition, I observed that the best performance is not actually obtained for the correct length scale estimate, but for some particular overestimate. This effect must be studied further, but the results suggest that an agent performing this search should use an overestimate and not an underestimate of the length scale that describes the field, provided this overestimate is not grossly inaccurate.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title></title>
